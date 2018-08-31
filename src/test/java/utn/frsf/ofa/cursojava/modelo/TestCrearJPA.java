@@ -34,6 +34,7 @@ public class TestCrearJPA {
         e1.setNombre("ALJALO PROJECT");
         e1.setDescripcion("Desarrollaremos una aplicación web con un framework de alto nivel denominado Django(usado en la asignatura DAI), donde podrán usarlo varios usuarios al mismo tiempo.");
         e1.setPresupuestoMaximo(1000.00);
+        e1.setId(1);
         pryDao.crear(e1);
         Proyecto e2=pryDao.buscarPorId(1);
         assertEquals(e1.getNombre(),e2.getNombre());
